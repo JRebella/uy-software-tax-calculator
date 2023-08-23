@@ -28,3 +28,6 @@ export const inUSD = (money: Money): number => {
       return money.amount * EXCHANGES.UYU_TO_USD;
   }
 };
+
+export const asUYU = (amount: number): Money => ({ amount, currency: "UYU" });
+export const asUSD = (amount: number): Money => ({ amount, currency: "USD" });
