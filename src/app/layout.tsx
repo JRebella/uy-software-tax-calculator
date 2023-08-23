@@ -13,7 +13,9 @@ export const metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <body className={classNames(inter.className, "flex flex-col min-h-screen")}>{children}</body>
+      <body className={classNames(inter.className, "flex flex-col min-h-screen dark:bg-slate-900 dark:text-white")}>
+        {children}
+      </body>
     </html>
   );
 }
